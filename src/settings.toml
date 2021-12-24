@@ -1,0 +1,285 @@
+[members]
+
+    [members.anu]
+    name = "The Australian National university"
+    groups = []
+
+        [[members.anu.endpoint]]
+        url = "https://anu.edu.au"
+        description = "Homepage"
+
+    [members.canberra]
+    name = "University of Canberra"
+    groups = []
+
+        [[members.canberra.endpoint]]
+        url = "https://canberra.edu.au"
+        description = "Homepage"
+
+    [members.csu]
+    name = "Charles Sturt University"
+    groups = []
+
+        [[members.csu.endpoint]]
+        url = "https://csu.edu.au"
+        description = "Homepage"
+
+    [members.mq]
+    name = "Macquarie University"
+    groups = []
+
+        [[members.mq.endpoint]]
+        url = "mq.edu.au"
+        description = "Homepage"
+
+    [members.scu]
+    name = "Southern Cross University"
+    groups = []
+
+        [[members.scu.endpoint]]
+        url = "https://scu.edu.au"
+        description = "Homepage"
+
+    [members.collaw]
+    name = "The College of Law"
+    groups = []
+
+        [[members.collaw.endpoint]]
+        url = "https://collaw.edu.au"
+        description = "Homepage"
+
+    [members.une]
+    name = "The University of New England"
+    groups = []
+
+        [[members.une.endpoint]]
+        url = "https://une.edu.au"
+        description = "Homepage"
+
+    [members.newcastle]
+    name = "The University of Newcastle"
+    groups = []
+
+        [[members.newcastle.endpoint]]
+        url = "https://newcastle.edu.au"
+        description = "Homepage"
+
+    [members.sydney]
+    name = "The University of Sydney"
+    groups = []
+
+        [[members.sydney.endpoint]]
+        url = "https://sydney.edu.au"
+        description = "Homepage"
+
+    [members.uts]
+    name = "University of Technology, Sydney"
+    groups = []
+
+        [[members.uts.endpoint]]
+        url = "https://uts.edu.au"
+        description = "Homepage"
+
+    [members.uow]
+    name = "University of Wollongong"
+    groups = []
+
+        [[members.uow.endpoint]]
+        url = "https://uow.edu.au"
+        description = "Homepage"
+
+    [members.unsw]
+    name = "UNSW Sydney"
+    groups = []
+
+        [[members.unsw.endpoint]]
+        url = "https://unsw.edu.au"
+        description = "Homepage"
+
+    [members.utscollege]
+    name = "UTS College"
+    groups = []
+
+        [[members.utscollege.endpoint]]
+        url = "https://utscollege.edu.au"
+        description = "Homepage"
+
+    [members.westernsydney]
+    name = "Western Sydney University"
+    groups = []
+
+        [[members.westernsydney.endpoint]]
+        url = "https://westernsydney.edu.au"
+        description = "Homepage"
+
+    [members.cdu]
+    name = "Charles Darwin University"
+    groups = []
+
+        [[members.cdu.endpoint]]
+        url = "https://cdu.edu.au"
+        description = "Homepage"
+
+    [members.bond]
+    name = "Bond University"
+    groups = []
+
+        [[members.bond.endpoint]]
+        url = "https://bond.edu.au"
+        description = "homepage"
+
+    [members.cqu]
+    name = "Central Queensland University"
+    groups = []
+
+        [[members.cqu.endpoint]]
+        url = "https://cqu.edu.au"
+        description = "Homepage"
+
+    [members.griffith]
+    name = "Griffith University"
+    groups = []
+
+        [[members.griffith.endpoint]]
+        url = "https://griffith.edu.au"
+        description = "Homepage"
+
+    [members.jcu]
+    name = "James Cook University"
+    groups = []
+
+        [[members.jcu.endpoint]]
+        url = "https://jcu.edu.au"
+        description = "Homepage"
+
+    [members.qut]
+    name = "Queensland University of Technology"
+    groups = []
+
+        [[members.qut.endpoint]]
+        url = "https://qut.edu.au"
+        description = "Homepage"
+
+    [members.uq]
+    name = "The University of Queensland"
+    groups = ["Go8", "QLD"]
+
+        [[members.uq.endpoint]]
+        url = "https://uq.edu.au"
+        description = "Homepage"
+
+        [[members.uq.endpoint]]
+        url = "https://auth.uq.edu.au"
+        description = "Authentication endpoint"
+
+    [members.usq]
+    name = "University of Southern Queensland"
+    groups = ["QLD"]
+
+        [[members.usq.endpoint]]
+        url = "https://usq.edu.au"
+        description = "Homepage"
+
+    [members.usc]
+    name = "University of the Sunshine Coast"
+    groups = []
+
+        [[members.usc.endpoint]]
+        url = "https://usc.edu.au"
+        description = "Homepage"
+
+    [members.deakin]
+    name = "Deakin University"
+    groups = []
+
+        [[members.deakin.endpoint]]
+        url = "https://deakin.edu.au"
+        description = "Homepage"
+
+    [members.federation]
+    name = "Federation University Australia"
+    groups = []
+
+        [[members.federation.endpoint]]
+        url = "https://federation.edu.au"
+        description = "Homepage"
+
+    [members.latrobe]
+    name = "La Trobe University"
+    groups = []
+
+        [[members.latrobe.endpoint]]
+        url = "https://latrobe.edu.au"
+        description = "Homepage"
+
+    [members.monash]
+    name = "Monash university"
+    groups = []
+
+        [[members.monash.endpoint]]
+        url = "https://monash.edu"
+        description = "Homepage"
+
+    [members.rmit]
+    name = "RMIT University"
+    groups = []
+
+        [[members.rmit.endpoint]]
+        url = "https://rmit.edu.au"
+        description = "Homepage"
+
+    [members.swin]
+    name = "Swinburne university of Technology"
+    groups = []
+
+        [[members.swin.endpoint]]
+        url = "https://swin.edu.au"
+        description = "Homepage"
+
+    [members.unimelb]
+    name = "The University of Melbourne"
+    groups = []
+
+        [[members.unimelb]]
+        url = "https://unimelb.edu.au"
+        description = "Homepage"
+
+    [members.vic]
+    name = "Victoria University"
+    groups = []
+
+        [[members.vic.endpoint]]
+        url = "https://vu.edu.au"
+        description = "Homepage"
+
+    [members.flinders]
+    name = "Flinders University"
+    groups = []
+
+        [[members.flinders.endpoint]]
+        url = "https://flinders.edu.au"
+        description = "Homepage"
+
+    [members.adelaide]
+    name = "The University of Adelaide"
+    groups = []
+
+        [[members.adelaide.endpoint]]
+        url = "https://adelaide.edu.au"
+        description = "Homepage"
+
+    [members.unisa]
+    name = "University of South Australia"
+    groups = []
+
+        [[members.unisa.endpoint]]
+        url = "https://unisa.edu.au"
+        description = "Homepage"
+
+    [members.curtin]
+    name = "Curtin University"
+    groups = []
+
+        [[members.curtin.endpoint]]
+        url = "https://curtin.edu.au"
+        description = "Homepage"

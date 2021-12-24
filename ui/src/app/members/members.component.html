@@ -1,0 +1,66 @@
+<h2 class="text-white">Members</h2>
+
+<mat-tab-group backgroundColor="accent">
+    <mat-tab *ngFor="let section of groups" label="{{section}}">
+        <mat-accordion >
+            <ng-container *ngFor="let member of members">
+                <mat-expansion-panel *ngIf="member.groups.includes(section)">
+                    <mat-expansion-panel-header >
+                        <mat-panel-title>
+                            <span>{{member.name}}</span>
+                            <span class="flex-grow"></span>
+                            <span [ngClass]="{
+                                'gradeTextFail': member.grading == 'F' || member.grading == 'NA', 
+                                'gradeTextPass': member.grading == 'P',
+                                'gradeTextCredit': member.grading == 'C',
+                                'gradeTextDistinction': member.grading == 'D',
+                                'gradeTextHighDistinction': member.grading == 'HD'
+                                }">{{member.grading}}</span>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="py-4" *ngFor="let endpoint of member.endpoints">
+                        <div class="py-4">
+                            <span class="font-bold">Endpoint</span><span>&nbsp;<a href="{{ endpoint.url }}">{{ endpoint.url }}</a></span>
+                        </div>
+                        <div class="flex">
+                            <div class="pl-4">
+                                <p class="underline">CAA</p>
+                                <ul class="pl-8 list-disc">
+                                    <li class="text-xs" *ngFor="let log of endpoint.ratings.CAA.log">{{ log }}</li>
+                                </ul>
+                            </div>
+                            <span class="flex-grow"></span>
+                            <span class="w-10" [ngClass]="{
+                                'gradeFail': endpoint.ratings.CAA.grade == 'F' || endpoint.ratings.CAA.grade == 'NA', 
+                                'gradePass': endpoint.ratings.CAA.grade == 'P',
+                                'gradeCredit': endpoint.ratings.CAA.grade == 'C',
+                                'gradeDistinction': endpoint.ratings.CAA.grade == 'D',
+                                'gradeHighDistinction': endpoint.ratings.CAA.grade == 'HD'
+                                }">
+                                <b>{{ endpoint.ratings.CAA.grade }}</b>
+                            </span>
+                        </div>
+                        <div class="flex">
+                            <div class="pl-4">
+                                <p class="underline">Protocol</p>
+                                <ul class="pl-8 list-disc">
+                                    <li class="text-xs" *ngFor="let log of endpoint.ratings.TLS.log">{{ log }}</li>
+                                </ul>
+                            </div>
+                            <span class="flex-grow"></span>
+                            <span class="w-10" [ngClass]="{
+                                'gradeFail': endpoint.ratings.TLS.grade == 'F' || endpoint.ratings.TLS.grade == 'NA', 
+                                'gradePass': endpoint.ratings.TLS.grade == 'P',
+                                'gradeCredit': endpoint.ratings.TLS.grade == 'C',
+                                'gradeDistinction': endpoint.ratings.TLS.grade == 'D',
+                                'gradeHighDistinction': endpoint.ratings.TLS.grade == 'HD'
+                                }">
+                                <b>{{ endpoint.ratings.TLS.grade }}</b>
+                            </span>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </ng-container>
+        </mat-accordion>
+    </mat-tab>
+</mat-tab-group>

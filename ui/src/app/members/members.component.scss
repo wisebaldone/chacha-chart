@@ -1,0 +1,64 @@
+.gradeFail {
+    border-right: solid 6px red;
+}
+
+.gradePass {
+    border-right: solid 6px blue;
+}
+
+.gradeCredit {
+    border-right: solid 6px orange;
+}
+
+.gradeDistinction {
+    border-right: solid 6px rgb(6, 173, 6);
+}
+
+.gradeHighDistinction {
+    border-right: solid 6px rgb(5, 87, 5);
+}
+
+.gradeBlockFail {
+    background: #E58B88;
+}
+
+.gradeBlockPass {
+    background: #5E96AE;
+}
+
+.gradeBlockCredit {
+    background: #F2CF59;
+}
+
+.gradeBlockDistinction {
+    background: lightgreen;
+}
+
+.gradeBlockHighDistinction {
+    background: #2EB364;
+}
+
+.gradeTextFail {
+    font-weight: 600;
+    color: red;
+}
+
+.gradeTextPass {
+    font-weight: 600;
+    color: blue;
+}
+
+.gradeTextCredit {
+    font-weight: 600;
+    color: darkorange;
+}
+
+.gradeTextDistinction {
+    font-weight: 600;
+    color: green;
+}
+
+.gradeTextHighDistinction {
+    font-weight: 600;
+    color: darkgreen;
+}
