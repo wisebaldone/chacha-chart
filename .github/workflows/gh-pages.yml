@@ -21,7 +21,7 @@ jobs:
       run: cd ui && npm install
 
     - name: Build
-      run: cd ui && npm run build:prod
+      run: cd ui && npm run build
 
     - name: Deploy
       if: success()
