@@ -21,7 +21,7 @@ jobs:
       run: cd ui && npm install
 
     - name: Build
-      run: cd ui && npm run build --base-href "https://wisebaldone.github.io/chacha-chart/"
+      run: cd ui && ng build --base-href /chacha-chart/
 
     - name: Deploy
       if: success()
