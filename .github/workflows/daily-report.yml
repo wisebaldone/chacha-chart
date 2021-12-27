@@ -48,8 +48,12 @@ jobs:
     - name: Query Endpoints
       run: |
         pipenv update
-        pipenv run python gen.py ../old-reports/
+        pipenv run python gen.py ../old-reports
       working-directory: ./src
+    
+    - name: Add Index
+      run: |
+        cp src/reports/index.json old-reports/index.json
 
     - name: Commit Report
       run: |
