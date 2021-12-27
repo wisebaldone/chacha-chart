@@ -27,7 +27,7 @@ jobs:
 
     - name: Query Endpoints
       run: |
-        cd src && pipenv run python main.py
+        cd src && pipenv update && pipenv run python main.py
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
