@@ -12,16 +12,35 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: Install dependencies ( backend )
+      run: |
+        apt-get install testssl.sh
+    
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.9"
+    
+    - name: Install pipenv
+      run: |
+        python -m pip install --upgrade pipenv wheel
+
+    - name: Query Endpoints
+      run: |
+        cd src && pipenv run python main.py
+
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
         node-version: '16'
 
     - name: Install dependencies
-      run: cd ui && npm install
+      run: |
+        cd ui && npm install
 
     - name: Build
-      run: cd ui && npm run ng -- build --base-href /chacha-chart/
+      run: |
+        cd ui && npm run ng -- build --base-href /chacha-chart/
 
     - name: Deploy
       if: success()

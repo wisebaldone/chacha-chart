@@ -240,7 +240,7 @@
     name = "The University of Melbourne"
     groups = []
 
-        [[members.unimelb]]
+        [[members.unimelb.endpoint]]
         url = "https://unimelb.edu.au"
         description = "Homepage"
 

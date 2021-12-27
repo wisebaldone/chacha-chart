@@ -20,8 +20,8 @@ def _grader_caa(metrics: any):
         return {key: default}
 
     finding = '--'
-    if 'scanResult' in metrics and 'serverDefaults' in metrics['scanResult'][0]:
-        for item in metrics['scanResult'][0]['serverDefaults']:
+    if 'serverDefaults' in metrics:
+        for item in metrics['serverDefaults']:
             if item['id'] == "DNS_CAArecord" or item['id'] == "DNS_CAArecord <cert#1>":
                 finding = item['finding']
                 break
@@ -63,8 +63,8 @@ def _grader_protocols(metrics: any):
     score = Scorer()
     score.set(0, 'Start at 0')
 
-    if 'scanResult' in metrics and 'protocols' in metrics['scanResult'][0]:
-        for item in metrics['scanResult'][0]['protocols']:
+    if 'protocols' in metrics:
+        for item in metrics['protocols']:
             if item['id'] == 'SSLv2' and item['finding'] == 'not offered':
                 score.add(15, "Not offering SSLv2")
 
@@ -191,36 +191,72 @@ class Report:
         return json.dumps(self._data, indent=4)
 
 
+def bug_fix(path: str):
+    """
+    Looks like testssl.sh has a small bug with json output so we will manually fix it ourselves.
+    :return:
+    """
+    lines = []
+
+    with open(path, 'r') as file:
+        lines = file.readlines()
+
+    if len(lines) == 0:
+        return
+
+    if "{" in lines[0]:
+        return
+
+    lines = lines[7:]
+
+    with open(path, 'w') as file:
+        file.writelines(lines)
+
+
 @click.command()
 def main():
     report = Report()
     members = settings.members
 
     timestamp = int(time.time())
+    input_file = f'reports/{timestamp}-input.txt'
+
+    with open(input_file, 'w') as file:
+        for id in members.keys():
+            member = members[id]
+            if 'groups' not in member:
+                member['groups'] = []
+
+            print(member.name)
+            report.add_member(id, member.name, member.groups)
+            for i in range(len(member.endpoint)):
+                endpoint = member.endpoint[i]
+                endpoint_file = f'scans/{id}-{i}-{timestamp}.json'
+
+                file.write(f'-p -S --jsonfile-pretty {endpoint_file} {endpoint.url}\n')
+
+    result = subprocess.run(
+        ['testssl', '--mode', 'parallel', '--file', input_file], capture_output=True)
+    if result.returncode != 0:
+        # report.add_endpoint(id, endpoint.url, error=result.stderr.decode('utf8'))
+        print(result.stderr)
+        exit(1)
+
     for id in members.keys():
         member = members[id]
-        if 'groups' not in member:
-            member['groups'] = []
 
-        print(member.name)
-        report.add_member(id, member.name, member.groups)
         for i in range(len(member.endpoint)):
             endpoint = member.endpoint[i]
-
             endpoint_file = f'scans/{id}-{i}-{timestamp}.json'
-            endpoint_rendered_file = f'scans/{id}-{i}-{timestamp}.html'
 
-            result = subprocess.run(
-                ['testssl', '-p', '-S', '--jsonfile-pretty', endpoint_file, '--htmlfile',
-                 endpoint_rendered_file, f'{endpoint.url}'], capture_output=True)
-            if result.returncode != 0:
-                report.add_endpoint(id, endpoint.url, error=result.stderr.decode('utf8'))
-                continue
+            bug_fix(endpoint_file)
 
-            with open(endpoint_file, 'r') as file:
-                metrics = json.loads(file.read())
-
-            report.add_endpoint(id, endpoint.url, metrics=metrics)
+            try:
+                with open(endpoint_file, 'r') as file:
+                    metrics = json.loads(file.read())
+                    report.add_endpoint(id, endpoint.url, metrics=metrics)
+            except:
+                report.add_endpoint(id, endpoint.url, error="Unable to process report")
 
     with open(f'reports/{timestamp}.json', 'w') as file:
         file.write(report.report())
