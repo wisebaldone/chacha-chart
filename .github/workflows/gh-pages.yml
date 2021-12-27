@@ -49,6 +49,8 @@ jobs:
 
     - name: Commit Report
       run: |
+        git config user.email "github@wisebaldone.com"
+        git config user.name "Robit"
         git add .
         git commit -m "Adding todays report"
         git push
