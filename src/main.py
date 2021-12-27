@@ -5,6 +5,7 @@ import subprocess
 import json
 import re
 import time
+import os
 
 from ansi2html import Ansi2HTMLConverter
 from config import settings
@@ -220,6 +221,9 @@ def main():
 
     timestamp = int(time.time())
     input_file = f'reports/{timestamp}-input.txt'
+
+    os.makedirs('reports', exist_ok=True)
+    os.makedirs('scans', exist_ok=True)
 
     with open(input_file, 'w') as file:
         for id in members.keys():
