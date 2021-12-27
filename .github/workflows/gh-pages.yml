@@ -8,53 +8,16 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:  
-    - name: Get current date
-      id: date
-      run: echo "::set-output name=date::$(date +'%d-%m-%Y')"
+    steps:
 
     - name: Checkout
       uses: actions/checkout@v2
-
-    - name: Install dependencies ( backend )
-      run: |
-        sudo apt-get install testssl.sh
-    
-    - name: Setup Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: "3.9"
-    
-    - name: Install pipenv
-      run: |
-        python -m pip install --upgrade pipenv wheel
-
-    - name: Query Endpoints
-      run: |
-        pipenv update
-        pipenv run python main.py
-      working-directory: ./src
     
     - name: Checkout Reports
       uses: actions/checkout@v2
       with:
         ref: 'reports'
         path: 'old-reports'
-
-    - name: Add Report
-      run: |
-        cp src/reports/report.json old-reports/$REPORT
-      env: 
-        REPORT: ${{ steps.date.outputs.date }}.json
-
-    - name: Commit Report
-      run: |
-        git config user.email "github@wisebaldone.com"
-        git config user.name "Robit"
-        git add .
-        git commit -m "Adding todays report"
-        git push
-      working-directory: ./old-reports
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
@@ -70,6 +33,10 @@ jobs:
       run: |
         npm run ng -- build --base-href /chacha-chart/
       working-directory: ./ui
+
+    - name: Add Reports to static
+      run: |
+        cp old-reports/*.json dist/ui/reports/
 
     - name: Deploy
       if: success()
