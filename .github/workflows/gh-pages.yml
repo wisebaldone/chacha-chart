@@ -36,7 +36,8 @@ jobs:
 
     - name: Add Reports to static
       run: |
-        cp old-reports/*.json dist/ui/reports/
+        mkdir ui/dist/ui/reports
+        cp old-reports/*.json ui/dist/ui/reports/
 
     - name: Deploy
       if: success()
