@@ -1,0 +1,1093 @@
+{
+    "members": {
+        "anu": {
+            "name": "The Australian National university",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://anu.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 100,
+                            "grade": "HD",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)",
+                                "+25 :: Offers TLSv1.3 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "D"
+        },
+        "canberra": {
+            "name": "University of Canberra",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://canberra.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "F"
+        },
+        "csu": {
+            "name": "Charles Sturt University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://csu.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 90,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+25 :: Remaining score added"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 55,
+                            "grade": "P",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+5 :: Offers TLSv1, its better to not offer it",
+                                "+10 :: Offers TLSv1.1, its better to not offer it",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "NA"
+        },
+        "mq": {
+            "name": "Macquarie University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "mq.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "P"
+        },
+        "scu": {
+            "name": "Southern Cross University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://scu.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 80,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+5 :: Offers TLSv1, its better to not offer it",
+                                "+10 :: Offers TLSv1.1, its better to not offer it",
+                                "+10 :: Offers TLSv1.2 =)",
+                                "+25 :: Offers TLSv1.3 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "NA"
+        },
+        "collaw": {
+            "name": "The College of Law",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://collaw.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "D"
+        },
+        "une": {
+            "name": "The University of New England",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://une.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 90,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+25 :: Remaining score added"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "NA"
+        },
+        "newcastle": {
+            "name": "The University of Newcastle",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://newcastle.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "F"
+        },
+        "sydney": {
+            "name": "The University of Sydney",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://sydney.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 55,
+                            "grade": "P",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+5 :: Offers TLSv1, its better to not offer it",
+                                "+10 :: Offers TLSv1.1, its better to not offer it",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "P"
+        },
+        "uts": {
+            "name": "University of Technology, Sydney",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://uts.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 100,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+10 :: Have iodef entry for being alerted to issues.",
+                                "+25 :: Remaining score added"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "F"
+        },
+        "uow": {
+            "name": "University of Wollongong",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://uow.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "C"
+        },
+        "unsw": {
+            "name": "UNSW Sydney",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://unsw.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 90,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+25 :: Remaining score added"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "P"
+        },
+        "utscollege": {
+            "name": "UTS College",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://utscollege.edu.au",
+                    "error": "Unable to process report"
+                }
+            ],
+            "grading": "HD"
+        },
+        "westernsydney": {
+            "name": "Western Sydney University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://westernsydney.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 100,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+10 :: Have iodef entry for being alerted to issues.",
+                                "+25 :: Remaining score added"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "P"
+        },
+        "cdu": {
+            "name": "Charles Darwin University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://cdu.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 55,
+                            "grade": "P",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+5 :: Offers TLSv1, its better to not offer it",
+                                "+10 :: Offers TLSv1.1, its better to not offer it",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "D"
+        },
+        "bond": {
+            "name": "Bond University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://bond.edu.au",
+                    "error": "Unable to process report"
+                }
+            ],
+            "grading": "HD"
+        },
+        "cqu": {
+            "name": "Central Queensland University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://cqu.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 55,
+                            "grade": "P",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+5 :: Offers TLSv1, its better to not offer it",
+                                "+10 :: Offers TLSv1.1, its better to not offer it",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "D"
+        },
+        "griffith": {
+            "name": "Griffith University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://griffith.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 90,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+25 :: Remaining score added"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "NA"
+        },
+        "jcu": {
+            "name": "James Cook University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://jcu.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 100,
+                            "grade": "HD",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)",
+                                "+25 :: Offers TLSv1.3 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "P"
+        },
+        "qut": {
+            "name": "Queensland University of Technology",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://qut.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 90,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+25 :: Remaining score added"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "NA"
+        },
+        "uq": {
+            "name": "The University of Queensland",
+            "groups": [
+                "Go8",
+                "QLD",
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://uq.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 100,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+10 :: Have iodef entry for being alerted to issues.",
+                                "+25 :: Remaining score added"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 55,
+                            "grade": "P",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+5 :: Offers TLSv1, its better to not offer it",
+                                "+10 :: Offers TLSv1.1, its better to not offer it",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "url": "https://auth.uq.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 100,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+10 :: Have iodef entry for being alerted to issues.",
+                                "+25 :: Remaining score added"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 100,
+                            "grade": "HD",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)",
+                                "+25 :: Offers TLSv1.3 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "D"
+        },
+        "usq": {
+            "name": "University of Southern Queensland",
+            "groups": [
+                "QLD",
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://usq.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 100,
+                            "grade": "HD",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)",
+                                "+25 :: Offers TLSv1.3 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "P"
+        },
+        "usc": {
+            "name": "University of the Sunshine Coast",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://usc.edu.au",
+                    "error": "Unable to process report"
+                }
+            ],
+            "grading": "D"
+        },
+        "deakin": {
+            "name": "Deakin University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://deakin.edu.au",
+                    "error": "Unable to process report"
+                }
+            ],
+            "grading": "P"
+        },
+        "federation": {
+            "name": "Federation University Australia",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://federation.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "P"
+        },
+        "latrobe": {
+            "name": "La Trobe University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://latrobe.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "P"
+        },
+        "monash": {
+            "name": "Monash university",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://monash.edu",
+                    "ratings": {
+                        "CAA": {
+                            "score": 100,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+10 :: Have iodef entry for being alerted to issues.",
+                                "+25 :: Remaining score added"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "HD"
+        },
+        "rmit": {
+            "name": "RMIT University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://rmit.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 55,
+                            "grade": "P",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+5 :: Offers TLSv1, its better to not offer it",
+                                "+10 :: Offers TLSv1.1, its better to not offer it",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "NA"
+        },
+        "swin": {
+            "name": "Swinburne university of Technology",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://swin.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 90,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+10 :: Have iodef entry for being alerted to issues.",
+                                "+25 :: Remaining score added",
+                                "-10 :: Have more than 6 CAAs on the domain"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 55,
+                            "grade": "P",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+5 :: Offers TLSv1, its better to not offer it",
+                                "+10 :: Offers TLSv1.1, its better to not offer it",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "P"
+        },
+        "unimelb": {
+            "name": "The University of Melbourne",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://unimelb.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "C"
+        },
+        "vic": {
+            "name": "Victoria University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://vu.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 100,
+                            "grade": "HD",
+                            "log": [
+                                "65 :: Having a CAA record is a parsing grade",
+                                "+10 :: Have iodef entry for being alerted to issues.",
+                                "+25 :: Remaining score added"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 75,
+                            "grade": "D",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "HD"
+        },
+        "flinders": {
+            "name": "Flinders University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://flinders.edu.au",
+                    "error": "Unable to process report"
+                }
+            ],
+            "grading": "P"
+        },
+        "adelaide": {
+            "name": "The University of Adelaide",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://adelaide.edu.au",
+                    "error": "Unable to process report"
+                }
+            ],
+            "grading": "F"
+        },
+        "unisa": {
+            "name": "University of South Australia",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://unisa.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 55,
+                            "grade": "P",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+5 :: Offers TLSv1, its better to not offer it",
+                                "+10 :: Offers TLSv1.1, its better to not offer it",
+                                "+10 :: Offers TLSv1.2 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "D"
+        },
+        "curtin": {
+            "name": "Curtin University",
+            "groups": [
+                "All"
+            ],
+            "endpoints": [
+                {
+                    "url": "https://curtin.edu.au",
+                    "ratings": {
+                        "CAA": {
+                            "score": 0,
+                            "grade": "F",
+                            "log": [
+                                "0 :: No CAA records found"
+                            ]
+                        },
+                        "TLS": {
+                            "score": 100,
+                            "grade": "HD",
+                            "log": [
+                                "0 :: Start at 0",
+                                "+15 :: Not offering SSLv2",
+                                "+15 :: Not offering SSLv3",
+                                "+15 :: Not offering TLS1",
+                                "+20 :: Not offering TLSv1.1",
+                                "+10 :: Offers TLSv1.2 =)",
+                                "+25 :: Offers TLSv1.3 =)"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "grading": "NA"
+        }
+    },
+    "count": 35
+}
